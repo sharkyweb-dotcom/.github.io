@@ -2,29 +2,68 @@
 <html>
 <head>
   <title>The Ultimate Website</title>
-  <link href="./index.css" type="text/css" rel="stylesheet">
+  <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <h1 id='headering'>The Ultimate Website</h1>
-    <p class='creepy'>I'm not sure what to put here but here's something: </p>
+
+    <p class='normal'>I'm not sure what to put here but here's something: </p>
     <br>
     <p id='box1'>If you hover over me...</p>
     <p id='box2'>My text will change!</p>
-    <p id='quiztext'>I could also give you a quiz!</p>
+    <p id='quiztext'>I could also give you a quiz!</p> 
+    <p class='normal' id='colorex'></p><span class='green'>Green means right;</span><span class='red'> Red means wrong!</span></p>
+
     <form>
-        <p class='creepy'>What is 19 squared?</p>
-        <p class='inline wrong'>Wrong</p>
-        <label id='label1' for="answer1">381</label>
-        <input type="radio" id='answer1' name= "quiz" value='381'>
-        <label id='label2' for="answer2">361</label>
-        <input type="radio" id='answer2' name='quiz' value='361'>
-        <p class='inline right'>Right</p>
+      <table>
+        <thead>
+          <th class='tablehead' scope='column'>Question: </th>
+          <th class='tablehead' scope='column'>Answers: </th>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>
+              <p class='normal'>What is 19 squared?</p>
+            </td>
+            <td>
+              <label id='label1' for="answer1">381</label>
+              <input type="radio" id='answer1' class='wrong' name= "quiz" value='381'>
+              <label id='label2' for="answer2">361</label>
+              <input type="radio" id='answer2' class='right' name='quiz' value='361'>
+              <label id='label3' for="answer3">324</label>
+              <input type="radio" id='answer3' class='wrong' name='quiz' value='324'>
+              <label id='label4' for="answer4">344</label>
+              <input type="radio" id='answer4' class='wrong' name='quiz' value='344'>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class='normal'>Which of the following is a palindrome?</p>
+            </td>
+            <td>
+              <label id='label1.1' for="answer1.1">Racecar Driver</label>
+              <input type="radio" id='answer1.1' class='wrong' name= "quiz">
+              <label id='label2' for="answer2.1">The sugary jelly tart</label>
+              <input type="radio" id='answer2.1' class='wrong' name='quiz'>
+              <label id='label3' for="answer3.1">Apples and oranges la-di-da</label>
+              <input type="radio" id='answer3.1' class='wrong' name='quiz'>
+              <label id='label4' for="answer4.1">Dr. Awkward</label>
+              <input type="radio" id='answer4.1' class='right' name='quiz'>
+            </td>
+          </tr>
+
+        </tbody>
+        </table>
     </form>
     <nav>
       <h3>Table of Contents</h3>
       <ul>
+        <a href="#headering"><li>Top</li></a>
         <a href="#box1"><li>Text-Change</li></a>
-        <a href="#form"><li>Quiz</li></a>
+        <a href="#quiztext"><li>Quiz</li></a>
       </ul>
     </nav>
 </body>
