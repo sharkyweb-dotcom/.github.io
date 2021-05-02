@@ -1,0 +1,68 @@
+* {      
+    text-align:center;
+}
+
+  h1 {
+    border: 3px solid pink;
+    position: static;
+  }
+
+ #box1 {
+    background: red;
+    color: white;
+    border: darkred;
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    width: 100%;
+}
+
+#box2 {
+    background: blue;
+    color: white;
+    border: darkblue;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    width: 100%;
+}
+
+#box2:hover {
+    opacity: 1;
+}
+
+#box1, #box2 {
+    top: 100px;
+}
+
+#answer1:checked {
+    outline: 5px solid red;
+    color: white;
+}
+
+#answer2:checked {
+    outline: 5px solid green;
+    color: white;
+}
+
+#quiztext {
+    color:aqua;
+    background-color: black;
+}
+
+.inline {
+    display: inline;
+    opacity: 0;
+}
+
+.wrong {
+    color: red;
+}
+
+.right {
+    color: green;
+}
+
+.creepy {
+    font-family:creepster;
+}
