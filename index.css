@@ -64,5 +64,24 @@
 }
 
 .creepy {
-    font-family:creepster;
+    font-family:cursive;
+    color: rgb(224, 178, 222);
+}
+
+nav {
+    border: 1px solid sandybrown;
+    position:fixed;
+    bottom:5px;
+    right:10px;
+    height:125px;
+    width:200px;
+}
+
+a {
+    color: goldenrod;
+    padding: auto;
+}
+
+li {
+    list-style: circle;
 }
