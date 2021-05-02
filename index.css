@@ -1,11 +1,15 @@
 * {      
     text-align:center;
+    padding:0;
 }
 
   h1 {
-    border: 3px solid pink;
-    position: static;
-    font-family: 'Copperplate Gothic';
+    border: 5px solid rgb(250, 100, 212);
+    position: sticky;
+    font-family: "Copperplate Gothic";
+    color: rgb(47, 255, 151);
+    top:10px;
+    z-index:10;
   }
 
  #box1 {
@@ -36,12 +40,12 @@
     top: 100px;
 }
 
-#answer1:checked {
+.wrong:checked {
     outline: 5px solid red;
     color: white;
 }
 
-#answer2:checked {
+.right:checked {
     outline: 5px solid green;
     color: white;
 }
@@ -56,15 +60,7 @@
     opacity: 0;
 }
 
-.wrong {
-    color: red;
-}
-
-.right {
-    color: green;
-}
-
-.creepy {
+.normal {
     font-family:cursive;
     color: rgb(224, 178, 222);
 }
@@ -86,3 +82,27 @@ a {
 li {
     list-style: circle;
 }
+
+table {
+    margin: 10px auto;
+    width: 500px;
+}
+
+td, th {
+    border: 4px solid royalblue;
+}
+
+.red {
+    color:red !important;
+    font-family: cursive;
+    background-color: lightsteelblue;
+    width:100%;
+}
+
+.green {
+    color:springgreen !important;
+    font-family: cursive;
+    background-color: lightsteelblue;
+    width:100%;
+}
+
