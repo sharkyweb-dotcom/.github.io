@@ -7,7 +7,7 @@
 <body>
     <h1 id='headering'>The Ultimate Website</h1>
 
-    <p class='normal'>I'm not sure what to put here but here's something: </p>
+    <p class='normal'>I'm not sure what to put here, but here's something: </p>
     <br>
     <p id='box1'>If you hover over me...</p>
     <p id='box2'>My text will change!</p>
@@ -16,6 +16,7 @@
 
     <form>
       <table>
+
         <thead>
           <th class='tablehead' scope='column'>Question: </th>
           <th class='tablehead' scope='column'>Answers: </th>
@@ -46,16 +47,51 @@
             <td>
               <label id='label1.1' for="answer1.1">Racecar Driver</label>
               <input type="radio" id='answer1.1' class='wrong' name= "quiz2">
-              <label id='label2' for="answer2.1">The sugary jelly tart</label>
+              <label id='label21' for="answer2.1">The sugary jelly tart</label>
               <input type="radio" id='answer2.1' class='wrong' name='quiz2'>
-              <label id='label3' for="answer3.1">Apples and oranges la-di-da</label>
+              <label id='label3.1' for="answer3.1">Apples and oranges la-di-da</label>
+              <br>
               <input type="radio" id='answer3.1' class='wrong' name='quiz2'>
-              <label id='label4' for="answer4.1">Dr. Awkward</label>
+              <label id='label4.1' for="answer4.1">Dr. Awkward</label>
               <input type="radio" id='answer4.1' class='right' name='quiz2'>
             </td>
           </tr>
 
+          <tr>
+            <td>
+              <p class='normal'>Which of the following binary number is this number: 67?</p>
+            </td>
+            <td>
+              <label id='label1.1' for="answer1.2">00067</label>
+              <input type="radio" id='answer1.2' class='wrong' name= "quiz3">
+              <label id='label2.2' for="answer2.2">11111101111111</label>
+              <input type="radio" id='answer2.2' class='wrong' name='quiz3'>
+              <br>
+              <label id='label3.2' for="answer3.2">1000011</label>
+              <input type="radio" id='answer3.2' class='right' name='quiz3'>
+              <label id='label4.2' for="answer4.2">10100101</label>
+              <input type="radio" id='answer4.2' class='wrong' name='quiz3'>
+            </td>
+          </tr>
         </tbody>
+
+        <tfoot>
+          <tr>
+            <td>
+              <label class='normal' id='label1.3' for="answer1.3">How many did you get right the first try?</label>
+            </td>
+            <td>
+              <input id='answer1.3' type="text">
+            </td>
+          </tr>
+          
+          <tr>
+            <td colspan='2'>
+              <input type="submit">
+            </td>
+          </tr>
+        </tfoot>
+
         </table>
     </form>
     <nav>
