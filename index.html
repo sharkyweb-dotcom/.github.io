@@ -12,7 +12,7 @@
     <p id='box1'>If you hover over me...</p>
     <p id='box2'>My text will change!</p>
     <p id='quiztext'>I could also give you a quiz!</p> 
-    <p class='normal' id='colorex'></p><span class='green'>Green means right;</span><span class='red'> Red means wrong!</span></p>
+    <p class='normal'></p><span class='green colorex'>Green means right;</span><span class='red colorex'> Red means wrong!</span></p>
 
     <form>
       <table>
@@ -31,10 +31,13 @@
             <td>
               <label id='label1' for="answer1">381</label>
               <input type="radio" id='answer1' class='wrong' name= "quiz" value='381'>
+              <br>
               <label id='label2' for="answer2">361</label>
               <input type="radio" id='answer2' class='right' name='quiz' value='361'>
+              <br>
               <label id='label3' for="answer3">324</label>
               <input type="radio" id='answer3' class='wrong' name='quiz' value='324'>
+              <br>
               <label id='label4' for="answer4">344</label>
               <input type="radio" id='answer4' class='wrong' name='quiz' value='344'>
             </td>
@@ -42,18 +45,20 @@
 
           <tr>
             <td>
-              <p class='normal'>Which of the following is a palindrome?</p>
+              <p class='normal'>Check all of the following palindromes.</p>
             </td>
             <td>
-              <label id='label1.1' for="answer1.1">Racecar Driver</label>
-              <input type="radio" id='answer1.1' class='wrong' name= "quiz2">
-              <label id='label21' for="answer2.1">The sugary jelly tart</label>
-              <input type="radio" id='answer2.1' class='wrong' name='quiz2'>
-              <label id='label3.1' for="answer3.1">Apples and oranges la-di-da</label>
+              <label id='label11' for="answer1.1">Racecar Driver</label>
+              <input type="checkbox" id='answer1.1' class='wrong' name= "quiz2">
               <br>
-              <input type="radio" id='answer3.1' class='wrong' name='quiz2'>
-              <label id='label4.1' for="answer4.1">Dr. Awkward</label>
-              <input type="radio" id='answer4.1' class='right' name='quiz2'>
+              <label id='label21' for="answer2.1">The sugary jelly tart</label>
+              <input type="checkbox" id='answer2.1' class='wrong' name='quiz2'>
+              <br>
+              <label id='label31' for="answer3.1">Apples and oranges la-di-da</label>
+              <input type="checkbox" id='answer3.1' class='wrong' name='quiz2'>
+              <br>
+              <label id='label41' for="answer4.1">Dr. Awkward</label>
+              <input type="checkbox" id='answer4.1' class='right' name='quiz2'>
             </td>
           </tr>
 
@@ -62,14 +67,16 @@
               <p class='normal'>Which of the following binary number is this number: 67?</p>
             </td>
             <td>
-              <label id='label1.1' for="answer1.2">00067</label>
+              <label id='label21' for="answer1.2">00067</label>
               <input type="radio" id='answer1.2' class='wrong' name= "quiz3">
-              <label id='label2.2' for="answer2.2">11111101111111</label>
+              <br>
+              <label id='label22' for="answer2.2">11111101111111</label>
               <input type="radio" id='answer2.2' class='wrong' name='quiz3'>
               <br>
-              <label id='label3.2' for="answer3.2">1000011</label>
+              <label id='label32' for="answer3.2">1000011</label>
               <input type="radio" id='answer3.2' class='right' name='quiz3'>
-              <label id='label4.2' for="answer4.2">10100101</label>
+              <br>
+              <label id='label42' for="answer4.2">10100101</label>
               <input type="radio" id='answer4.2' class='wrong' name='quiz3'>
             </td>
           </tr>
@@ -78,10 +85,20 @@
         <tfoot>
           <tr>
             <td>
-              <label class='normal' id='label1.3' for="answer1.3">How many did you get right the first try?</label>
+              <label class='normal' id='label13' for="answer1.3">How many did you get right on your first try?</label>
             </td>
             <td>
-              <input id='answer1.3' type="text">
+              <input id='answer1.3' type="number">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label class='normal' id='label14' for="answer1.4">Rate the quiz. Worst is on the left; Best is on the right!</label>
+            </td>
+            <td>
+              <input id='answer14' type="range">
+              <p id='explain'><span class='red rangex'>Horrible</span><span class='rangex'> Neutral </span><span class='green rangex'>Great</p>
             </td>
           </tr>
           

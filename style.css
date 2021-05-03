@@ -41,12 +41,12 @@
 }
 
 .wrong:checked {
-    outline: 5px solid red;
+    outline: 3px solid red;
     color: white;
 }
 
 .right:checked {
-    outline: 5px solid green;
+    outline: 3px solid green;
     color: white;
 }
 
@@ -61,8 +61,8 @@
 }
 
 .normal {
-    font-family:cursive;
-    color: rgb(224, 178, 222);
+    font-family:cursive !important;
+    color: rgb(224, 178, 222) !important;
 }
 
 nav {
@@ -95,17 +95,40 @@ td, th {
 .red {
     color:red !important;
     font-family: cursive;
-    background-color: lightsteelblue;
     width:100%;
 }
 
 .green {
     color:springgreen !important;
     font-family: cursive;
-    background-color: lightsteelblue;
     width:100%;
 }
 
-#label21 {
+.colorex {
+    background-color: lightsteelblue;
+}
+
+#label31 {
+    font-size: 11px;
+}
+
+#answer14 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.rangex {
+    font-family: Consolas;
     font-size: 13px;
+    color: grey;
+}
+
+[id*='label'] {
+    font-family: Rockwell;
+    color: red;
+}
+
+#explain {
+    padding-top: 0px;
+    margin-top: 0px;
 }
