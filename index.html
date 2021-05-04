@@ -5,14 +5,15 @@
   <link href="./style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+  <div id='top'></div>
     <h1 id='headering'>The Ultimate Website</h1>
 
-    <p class='normal'>I'm not sure what to put here, but here's something: </p>
+    <h2 class='normal' id='subtitle'>Get ready to be astounded, confounded, and amazed: </h2>
     <br>
-    <p id='box1'>If you hover over me...</p>
-    <p id='box2'>My text will change!</p>
-    <p id='quiztext'>I could also give you a quiz!</p> 
-    <p class='normal'></p><span class='green colorex'>Green means right;</span><span class='red colorex'> Red means wrong!</span></p>
+    <h3 id='box1'>If you hover over me...</h3>
+    <h3 id='box2'>My text will change!</h3>
+    <h3 id='quiztext'>I could also give you a quiz!</h3> 
+    <h3 class='normal'><span class='green colorex'>Green means right;</span><span class='red colorex'> Red means wrong!</span></h3>
 
     <form>
       <table>
@@ -30,16 +31,16 @@
             </td>
             <td>
               <label id='label1' for="answer1">381</label>
-              <input type="radio" id='answer1' class='wrong' name= "quiz" value='381'>
+              <input type="radio" id='answer1' class='wrong' name= "quiz" value='381' required>
               <br>
               <label id='label2' for="answer2">361</label>
-              <input type="radio" id='answer2' class='right' name='quiz' value='361'>
+              <input type="radio" id='answer2' class='right' name='quiz' value='361' required>
               <br>
               <label id='label3' for="answer3">324</label>
-              <input type="radio" id='answer3' class='wrong' name='quiz' value='324'>
+              <input type="radio" id='answer3' class='wrong' name='quiz' value='324' required>
               <br>
               <label id='label4' for="answer4">344</label>
-              <input type="radio" id='answer4' class='wrong' name='quiz' value='344'>
+              <input type="radio" id='answer4' class='wrong' name='quiz' value='344' required>
             </td>
           </tr>
 
@@ -48,8 +49,17 @@
               <p class='normal'>Check all of the following palindromes.</p>
             </td>
             <td>
+              <label id='label61' for="answer6.1">Deified</label>
+              <input type="checkbox" id='answer6.1' class='right' name='quiz2' required>
+              <br>
               <label id='label11' for="answer1.1">Racecar Driver</label>
               <input type="checkbox" id='answer1.1' class='wrong' name= "quiz2">
+              <br>
+              <label id='label51' for="answer5.1">Rotator</label>
+              <input type="checkbox" id='answer5.1' class='right' name='quiz2' required>
+              <br>
+              <label id='label71' for="answer7.1">Alpha Centauri</label>
+              <input type="checkbox" id='answer7.1' class='wrong' name= "quiz2">
               <br>
               <label id='label21' for="answer2.1">The sugary jelly tart</label>
               <input type="checkbox" id='answer2.1' class='wrong' name='quiz2'>
@@ -58,7 +68,7 @@
               <input type="checkbox" id='answer3.1' class='wrong' name='quiz2'>
               <br>
               <label id='label41' for="answer4.1">Dr. Awkward</label>
-              <input type="checkbox" id='answer4.1' class='right' name='quiz2'>
+              <input type="checkbox" id='answer4.1' class='right' name='quiz2' required>
             </td>
           </tr>
 
@@ -68,16 +78,16 @@
             </td>
             <td>
               <label id='label21' for="answer1.2">00067</label>
-              <input type="radio" id='answer1.2' class='wrong' name= "quiz3">
+              <input type="radio" id='answer1.2' class='wrong' name= "quiz3" required>
               <br>
               <label id='label22' for="answer2.2">11111101111111</label>
-              <input type="radio" id='answer2.2' class='wrong' name='quiz3'>
+              <input type="radio" id='answer2.2' class='wrong' name='quiz3' required>
               <br>
-              <label id='label32' for="answer3.2">1000011</label>
-              <input type="radio" id='answer3.2' class='right' name='quiz3'>
+              <label id='label32' for="answer3.2">1000011</label> 
+              <input type="radio" id='answer3.2' class='right' name='quiz3' required>
               <br>
               <label id='label42' for="answer4.2">10100101</label>
-              <input type="radio" id='answer4.2' class='wrong' name='quiz3'>
+              <input type="radio" id='answer4.2' class='wrong' name='quiz3' required>
             </td>
           </tr>
         </tbody>
@@ -88,7 +98,7 @@
               <label class='normal' id='label13' for="answer1.3">How many did you get right on your first try?</label>
             </td>
             <td>
-              <input id='answer1.3' type="number">
+              <input placeholder='Answer Here' id='answer1.3' type="number" min='0' max='3' required>
             </td>
           </tr>
 
@@ -97,11 +107,20 @@
               <label class='normal' id='label14' for="answer1.4">Rate the quiz. Worst is on the left; Best is on the right!</label>
             </td>
             <td>
-              <input id='answer14' type="range">
+              <input id='answer14' type="range" required>
               <p id='explain'><span class='red rangex'>Horrible</span><span class='rangex'> Neutral </span><span class='green rangex'>Great</p>
             </td>
           </tr>
-          <!-- -->
+
+          <tr>
+            <td>
+              <label class='normal' for="answer15">Why did you give this rating? (Optional)</label>
+            </td>
+            <td>
+              <textarea id="answer15" cols="30" rows="6" placeholder='Answer Here'></textarea>
+            </td>
+          </tr>
+          
           <tr>
             <td colspan='2'>
               <input type="submit">
@@ -114,7 +133,7 @@
     <nav>
       <h3>Table of Contents</h3>
       <ul>
-        <a href="#headering"><li>Top</li></a>
+        <a href="#top"><li>Top</li></a>
         <a href="#box1"><li>Text-Change</li></a>
         <a href="#quiztext"><li>Quiz</li></a>
       </ul>

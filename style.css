@@ -5,11 +5,22 @@
 
   h1 {
     border: 5px solid rgb(250, 100, 212);
-    position: sticky;
+    position: fixed;
     font-family: "Copperplate Gothic";
     color: rgb(47, 255, 151);
-    top:10px;
+    top:0px;
     z-index:10;
+    font-size: 40px;
+    display:block;
+    width:100%;
+    background-color: white;
+  }
+
+  #subtitle {
+      position: relative;
+      top: 60px;
+      font-size:25px;
+      margin-bottom:60px;
   }
 
  #box1 {
@@ -133,3 +144,12 @@ td, th {
     padding-top: 0px;
     margin-top: 0px;
 }
+
+th {
+    font-size: 25px;
+    color: blueviolet;
+}
+
+textarea {
+    text-align: left;
+  }
