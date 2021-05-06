@@ -3,19 +3,23 @@
 <head>
   <title>The Ultimate Website</title>
   <link href="./style.css" type="text/css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Geostar&family=Girassol&family=New+Tegomin&family=Itim&display=swap" rel="stylesheet">
 </head>
 <body>
+  <p id='test'></p>
   <div id='top'></div>
     <h1 id='headering'>The Ultimate Website</h1>
 
     <h2 class='normal' id='subtitle'>Get ready to be astounded, confounded, and amazed: </h2>
     <br>
-    <h3 id='box1'>If you hover over me...</h3>
-    <h3 id='box2'>My text will change!</h3>
-    <h3 id='quiztext'>I could also give you a quiz!</h3> 
+    <h3 id='box1'>See what happens when you hover your mouse over me! <span class='translucent'>(If you're on a mobile device, click on me)</span></h3>
+    <h3 id='box2'>My text <em>and</em> my color change!</h3>
+    <h3 class='normal'>I Have an Idea:</h3>
+    <h3 id='quiztext'>You can take a quiz!</h3> 
     <h3 class='normal'><span class='green colorex'>Green means right;</span><span class='red colorex'> Red means wrong!</span></h3>
 
-    <form>
+    <form METHOD="POST" action="https://formspree.io/f/xayaqkjj">
       <table>
 
         <thead>
@@ -50,25 +54,25 @@
             </td>
             <td>
               <label id='label61' for="answer6.1">Deified</label>
-              <input type="checkbox" id='answer6.1' class='right' name='quiz2' required>
+              <input type="checkbox" id='answer6.1' class='right' name='quiz2' value='Deified'>
               <br>
               <label id='label11' for="answer1.1">Racecar Driver</label>
-              <input type="checkbox" id='answer1.1' class='wrong' name= "quiz2">
+              <input type="checkbox" id='answer1.1' class='wrong' name= "quiz2" value='Racecar Driver'>
               <br>
               <label id='label51' for="answer5.1">Rotator</label>
-              <input type="checkbox" id='answer5.1' class='right' name='quiz2' required>
+              <input type="checkbox" id='answer5.1' class='right' name='quiz2' value='Rotator'>
               <br>
               <label id='label71' for="answer7.1">Alpha Centauri</label>
-              <input type="checkbox" id='answer7.1' class='wrong' name= "quiz2">
+              <input type="checkbox" id='answer7.1' class='wrong' name= "quiz2" value='Alpha Centauri'>
               <br>
               <label id='label21' for="answer2.1">The sugary jelly tart</label>
-              <input type="checkbox" id='answer2.1' class='wrong' name='quiz2'>
+              <input type="checkbox" id='answer2.1' class='wrong' name='quiz2' value='The sugary jelly tart'>
               <br>
               <label id='label31' for="answer3.1">Apples and oranges la-di-da</label>
-              <input type="checkbox" id='answer3.1' class='wrong' name='quiz2'>
+              <input type="checkbox" id='answer3.1' class='wrong' name='quiz2' value='Apples and oranges la-di-da'>
               <br>
               <label id='label41' for="answer4.1">Dr. Awkward</label>
-              <input type="checkbox" id='answer4.1' class='right' name='quiz2' required>
+              <input type="checkbox" id='answer4.1' class='right' name='quiz2' value='Dr. Awkward'>
             </td>
           </tr>
 
@@ -78,16 +82,16 @@
             </td>
             <td>
               <label id='label21' for="answer1.2">00067</label>
-              <input type="radio" id='answer1.2' class='wrong' name= "quiz3" required>
+              <input type="radio" id='answer1.2' class='wrong' name= "quiz3" value='00067' required>
               <br>
               <label id='label22' for="answer2.2">11111101111111</label>
-              <input type="radio" id='answer2.2' class='wrong' name='quiz3' required>
+              <input type="radio" id='answer2.2' class='wrong' name='quiz3' value='11111101111111' required>
               <br>
               <label id='label32' for="answer3.2">1000011</label> 
-              <input type="radio" id='answer3.2' class='right' name='quiz3' required>
+              <input type="radio" id='answer3.2' class='right' name='quiz3' value='1000011' required>
               <br>
               <label id='label42' for="answer4.2">10100101</label>
-              <input type="radio" id='answer4.2' class='wrong' name='quiz3' required>
+              <input type="radio" id='answer4.2' class='wrong' name='quiz3' value='10100101' required>
             </td>
           </tr>
         </tbody>
@@ -98,7 +102,7 @@
               <label class='normal' id='label13' for="answer1.3">How many did you get right on your first try?</label>
             </td>
             <td>
-              <input placeholder='Answer Here' id='answer1.3' type="number" min='0' max='3' required>
+              <input placeholder='Answer Here' id='answer1.3' type="number" min='0' max='3' name='quiz4' required>
             </td>
           </tr>
 
@@ -107,8 +111,8 @@
               <label class='normal' id='label14' for="answer1.4">Rate the quiz. Worst is on the left; Best is on the right!</label>
             </td>
             <td>
-              <input id='answer14' type="range" required>
-              <p id='explain'><span class='red rangex'>Horrible</span><span class='rangex'> Neutral </span><span class='green rangex'>Great</p>
+              <input id='answer14' type="range" name='quiz5' min='1' max='10' step='1' required>
+              <p id='explain'><span class='red rangex'>1 2 3</span><span class='rangex'> 4 5 6 7 </span><span class='green rangex'>8 9 10</p>
             </td>
           </tr>
 
@@ -117,7 +121,7 @@
               <label class='normal' for="answer15">Why did you give this rating? (Optional)</label>
             </td>
             <td>
-              <textarea id="answer15" cols="30" rows="6" placeholder='Answer Here'></textarea>
+              <textarea id="answer15" cols="30" rows="6" placeholder='Answer Here' name='quiz6'></textarea>
             </td>
           </tr>
           

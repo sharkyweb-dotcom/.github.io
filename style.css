@@ -1,12 +1,13 @@
 * {      
     text-align:center;
     padding:0;
+    font-family: Girassol;
 }
 
   h1 {
     border: 5px solid rgb(250, 100, 212);
     position: fixed;
-    font-family: "Copperplate Gothic";
+    font-family: "Geostar", "Copperplate Gothic";
     color: rgb(47, 255, 151);
     top:0px;
     z-index:10;
@@ -51,6 +52,10 @@
     top: 100px;
 }
 
+.translucent {
+    opacity: 0.75;
+}
+
 .wrong:checked {
     outline: 3px solid red;
     color: white;
@@ -66,13 +71,18 @@
     background-color: black;
 }
 
+#quiztext:hover {
+    background-color: aqua;
+    color: black;
+}
+
 .inline {
     display: inline;
     opacity: 0;
 }
 
 .normal {
-    font-family:cursive !important;
+    font-family:Creepster !important;
     color: rgb(224, 178, 222) !important;
 }
 
@@ -136,7 +146,7 @@ td, th {
 }
 
 [id*='label'] {
-    font-family: Rockwell;
+    font-family: 'New Tegomin';
     color: red;
 }
 
@@ -152,4 +162,14 @@ th {
 
 textarea {
     text-align: left;
-  }
+}
+
+#answer14 {
+    width: 150px;
+}
+
+#test {
+    position: fixed;
+    display: none;
+    top: 100px;
+}
