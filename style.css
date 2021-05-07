@@ -173,3 +173,18 @@ textarea {
     display: none;
     top: 100px;
 }
+
+strong {
+    font-weight: 900;
+    font-style: italic;
+}
+
+#invis {
+     opacity: 0; 
+     height: 3px;
+}
+
+#invis:hover {
+    opacity: 1;
+    height:50px;
+}
