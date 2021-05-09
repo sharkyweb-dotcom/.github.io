@@ -42,9 +42,6 @@
     z-index: 2;
     opacity: 0;
     width: 100%;
-    transition-property: opacity;
-    transition-duration: 1s;
-    transition-delay: 509ms;
 }
 
 #box2:hover {
@@ -185,13 +182,9 @@ strong {
 #invis {
      opacity: 0; 
      height: 3px;
-     transition-property: height, opacity;
-     transition-delay: 300ms;
-     transition-duration: 500ms;
 }
 
 #invis:hover {
     opacity: 1;
     height:50px;
-    cursor: wait;
 }
